@@ -30,13 +30,7 @@
   <img alt="github-snake" src="https://raw.githubusercontent.com/SENAI4LIFE/SENAI4LIFE/output/github-contribution-grid-snake-dark.svg" />
 </picture>
 
-</div>
-
----
-
-<div align="center">
-
-![Visitor Count](https://komarev.com/ghpvc/?username=SENAI4LIFE&color=00ff88&style=for-the-badge&label=PROFILE+VIEWS)
+<img width="100%" src="https://raw.githubusercontent.com/SENAI4LIFE/SENAI4LIFE/output/ocean.gif"/>
 
 </div>
 
