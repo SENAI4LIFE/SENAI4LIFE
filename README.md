@@ -8,8 +8,6 @@
 
 ---
 
-## Stats
-
 <div align="center">
 
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SENAI4LIFE&layout=compact&theme=chartreuse-dark&border_color=00ff88&bg_color=0d1117&title_color=00ff88&text_color=ffffff"/>
@@ -17,8 +15,6 @@
 </div>
 
 ---
-
-## Snake
 
 <div align="center">
 
