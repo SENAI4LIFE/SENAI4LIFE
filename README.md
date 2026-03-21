@@ -30,8 +30,6 @@
   <img alt="github-snake" src="https://raw.githubusercontent.com/SENAI4LIFE/SENAI4LIFE/output/github-contribution-grid-snake-dark.svg" />
 </picture>
 
-<img width="100%" src="https://raw.githubusercontent.com/SENAI4LIFE/SENAI4LIFE/output/ocean.gif"/>
-
 </div>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:00ff88,100:0d1117&height=120&section=footer"/>
