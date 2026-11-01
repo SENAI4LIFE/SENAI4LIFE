@@ -39,5 +39,3 @@
   <source media="(prefers-color-scheme: dark)" srcset="assets/trail-dark.svg">
   <img src="assets/trail-light.svg" width="100%" alt="A yearly contribution calendar with an animated orange fox.">
 </picture>
-
-<p align="center"><a href="https://github.com/SENAI4LIFE/SENAI4LIFE/issues/new?template=conversation.yml">Contact</a> · <a href="docs/PROFILE.md">Data notes</a></p>
