@@ -1,0 +1,21 @@
+name: Start a conversation
+description: Start a conversation about engineering, robotics, or practical tools.
+body:
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Topic
+      options:
+        - Robotics and simulation
+        - Automation and Python
+        - Engineering and numerical methods
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What's on your mind?
+      description: Share your question or idea. For a project bug, please use that project's issue tracker.
+    validations:
+      required: true

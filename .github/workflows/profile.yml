@@ -1,0 +1,51 @@
+name: Profile assets
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - assets/**
+      - scripts/**
+      - tests/**
+      - .github/workflows/profile.yml
+  pull_request:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - run: python3 -m unittest discover -s tests
+      - run: python3 scripts/profile.py --check
+
+  refresh:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - run: python3 scripts/profile.py --refresh --check
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - run: python3 scripts/publish.py
+        env:
+          GH_TOKEN: ${{ github.token }}
