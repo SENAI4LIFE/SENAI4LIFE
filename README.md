@@ -5,8 +5,6 @@
   <img src="assets/header.svg" width="100%" alt="SENAI4LIFE">
 </picture>
 
-<p><a href="#activity">Activity</a> · <a href="#contributions">Contributions</a></p>
-
 </div>
 
 ## Activity
